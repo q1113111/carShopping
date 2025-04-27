@@ -1,6 +1,6 @@
 <template>
-  <div class="h-full">
-    <div class="grid grid-cols-4 gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+  <div class="h-full overflow-auto">
+    <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
       <ul
         class="flex flex-col gap-3 rounded-lg bg-white p-4 shadow-sm transition-shadow hover:shadow-md"
         v-for="items of data"

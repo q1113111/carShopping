@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full p-10">
+  <div class="h-full overflow-auto">
     <div class="flex flex-col gap-5">
       <ul
         class="relative flex flex-col gap-3 rounded-lg bg-white p-4 pl-10 shadow-sm transition-shadow hover:shadow-md"
@@ -29,8 +29,8 @@
         <li></li>
       </ul>
     </div>
-    <div class="mt-2 flex justify-between">
-      <div class="text-2xl">總計:{{ total }}</div>
+    <div class="mt-2 flex items-center justify-between">
+      <div class="sm:text-2xl">總計:{{ total }}</div>
       <div class="flex gap-2">
         <BaseBtn
           @click="addCar"
