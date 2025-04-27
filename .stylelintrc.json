@@ -1,0 +1,146 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier",
+    "stylelint-config-html/vue"
+  ],
+  "ignoreFiles": [
+    "./node_modules/**/*.{css,scss,sass}",
+    "./dist/**/*.{css,scss,sass}"
+  ],
+  "overrides": [
+    {
+      "customSyntax": "postcss-html",
+      "files": [
+        "**/*.vue"
+      ]
+    }
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "alpha-value-notation": null,
+    "color-function-notation": "legacy",
+    "color-hex-case": "lower",
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-block-no-redundant-longhand-properties": null,
+    "declaration-block-no-shorthand-property-overrides": null,
+    "max-line-length": null,
+    "max-nesting-depth": null,
+    "media-feature-range-notation": null,
+    "no-descending-specificity": null,
+    "no-duplicate-selectors": null,
+    "no-empty-source": null,
+    "number-max-precision": 6,
+    "order/properties-alphabetical-order": null,
+    "order/properties-order": [
+      "position",
+      "top",
+      "bottom",
+      "right",
+      "left",
+      "display",
+      "align-items",
+      "justify-content",
+      "float",
+      "clear",
+      "overflow",
+      "overflow-x",
+      "overflow-y",
+      "margin",
+      "margin-top",
+      "margin-right",
+      "margin-bogttom",
+      "margin-left",
+      "padding",
+      "padding-top",
+      "padding-right",
+      "padding-bottom",
+      "padding-left",
+      "width",
+      "min-width",
+      "max-width",
+      "height",
+      "min-height",
+      "max-height",
+      "font-size",
+      "font-family",
+      "font-weight",
+      "text-align",
+      "text-justify",
+      "text-indent",
+      "text-overflow",
+      "text-decoration",
+      "white-space",
+      "color",
+      "background",
+      "background-position",
+      "background-repeat",
+      "background-size",
+      "background-color",
+      "background-clip",
+      "border",
+      "border-style",
+      "border-width",
+      "border-color",
+      "border-top-style",
+      "border-top-width",
+      "border-top-color",
+      "border-right-style",
+      "border-right-width",
+      "border-right-color",
+      "border-bottom-style",
+      "border-bottom-width",
+      "border-bottom-color",
+      "border-left-style",
+      "border-left-width",
+      "border-left-color",
+      "border-radius",
+      "opacity",
+      "filter",
+      "list-style",
+      "outline",
+      "visibility",
+      "z-index",
+      "box-shadow",
+      "text-shadow",
+      "resize",
+      "transition"
+    ],
+    "property-no-vendor-prefix": null,
+    "scss/at-import-partial-extension-blacklist": null,
+    "scss/at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "tailwind"
+        ]
+      }
+    ],
+    "selector-class-pattern": null,
+    "selector-max-compound-selectors": null,
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": [
+          "attribute",
+          "class",
+          "id"
+        ]
+      }
+    ],
+    "selector-not-notation": null,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": [
+          "deep",
+          "global"
+        ]
+      }
+    ],
+    "string-quotes": "single",
+    "value-no-vendor-prefix": null
+  }
+}

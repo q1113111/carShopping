@@ -1,0 +1,31 @@
+stages:
+  - build
+  - test
+
+image: node:18.16.1-alpine3.18
+
+cache:
+  paths:
+    - node_modules
+
+build: 
+  only:
+    - master
+  stage: build
+  script:
+    - yarn install 
+  artifacts:
+    paths:
+      - node_modules
+
+
+
+test-unit:
+  only:
+    - master 
+  stage: test
+  script:
+    - yarn test:unit
+  artifacts:
+    paths:
+      - node_modules/
